@@ -16,7 +16,7 @@ export default class UserService {
             accessToken: Date.now().toString(36),
             wallet: createdWallet,
         });
-
+    
         const createdUser = await userToCreate.save();
 
         return createdUser;

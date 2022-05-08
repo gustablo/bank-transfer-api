@@ -1,3 +1,4 @@
+import { groupCollapsed } from 'console';
 import express from 'express';
 import { connect } from './configs/database.js';
 import graphql from './configs/graphql.js';

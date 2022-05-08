@@ -30,11 +30,11 @@ export const typeDefs = gql`
     }
 
     type Mutation {
-        createUser(input:UserInput):User
-        transact(input:TransactionInput):Transaction
+        createUser(input: UserInput!): User
+        transact(input: TransactionInput!): Transaction
     }
 
     type Query {
-        getUser(accessToken: String): User
+        getUser(accessToken: String!): User!
     }
 `;

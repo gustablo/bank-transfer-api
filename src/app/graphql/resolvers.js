@@ -7,7 +7,7 @@ export const resolvers = {
             const userService = new UserService();
 
             return await userService.getUser(accessToken);
-        }
+        },
     },
     Mutation: {
         createUser: async (root, { input }) => {
